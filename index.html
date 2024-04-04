@@ -12,45 +12,45 @@
       <h1>Todo List</h1>
     </header>
     <main>
+      <h2> Project List:</h2> <br>
       <div id="projects" class="project-list">
       </div>
-      <div id="todo-details" class="todo-details">
+      <div id="todo-details-display" class="todo-details">
         <!-- Todo details will be rendered here -->
       </div>
-    </main>
-  </div>
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Add New Project</h2>
-      <form id="project-form">
-        <input type="text" id="project-name" placeholder="Enter project name" required>
-        <button type="submit">Add Project</button>
-      </form>
-    </div>
-  </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span> <br>
+          <h2>Add New Project</h2>
+          <form id="project-form">
+            <input type="text" id="project-name" placeholder="Enter project name" required>
+            <button type="submit">Add Project</button>
+          </form>
+        </div>
+      </div>
 
-  <div id="todo-modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Todo Details</h2>
-      <form id="todo-form">
-        <input type="text" id="todo-title" class="todo-title" name="todo-title" placeholder="Title" required>
-        <textarea class="todo-description" name="todo-description" placeholder="Description" required></textarea>
-        <input type="date" class="todo-due-date" name="todo-due-date" required>
-        <select class="todo-priority" name="todo-priority" required>
-          <option value="high">High</option>
-          <option value="medium">Medium</option>
-          <option value="low">Low</option>
-        </select>
-        <input type="text" class="todo-notes" name="todo-notes" placeholder="Notes">
-        <button type="submit">Save Changes</button>
-        <button id="delete-todo-btn" type="button">Delete Todo</button>
-      </form>
-      <label for="project-select">Select Project:</label>
-      <select id="project-select">
-      </select>
-    </div>
+      <div id="todo-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span> <br>
+          <h2>Todo Details</h2>
+          <form id="todo-form">
+            <input type="text" id="todo-title" class="todo-title" name="todo-title" placeholder="Title" required>
+            <textarea class="todo-description" name="todo-description" placeholder="Description" required></textarea>
+            <input type="date" class="todo-due-date" name="todo-due-date" required>
+            <select class="todo-priority" name="todo-priority" required>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+            <input type="text" class="todo-notes" name="todo-notes" placeholder="Notes">
+            <button type="submit">Save Changes</button>
+          </form>
+          <label for="project-select">Select Project:</label>
+          <select id="project-select">
+          </select>
+        </div>
+      </div>
+    </main>
   </div>
 
   <script src="dist/bundle.js"></script>
